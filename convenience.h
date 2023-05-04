@@ -18,8 +18,8 @@ int length(char array[]){
     return i;
 }
 
-int coords(int x, int y, int rows){
-    return x+y*rows;
+int coords(int x, int y, int cols){
+    return x+y*cols;
 }
 
 void assign(char * ptr, char array[]){
@@ -40,7 +40,7 @@ void draw(char array[], int rows, int cols){
     system("clear");
     for(int i = 0; i < rows; i++){
         for(int j = 0; j < cols; j++){
-            cout << array[coords(j, i, rows)];
+            cout << array[coords(j, i, cols)];
         }
         cout << "\n";
     }
